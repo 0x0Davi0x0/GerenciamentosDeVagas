@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form, table {
+            width: 80%;
+            margin: 0 auto;
+        }
+        button {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Veículos</h1>
+
+    <form id="veiculoForm">
+        <label for="placaVeiculo">Placa do Veículo:</label>
+        <input type="text" id="placaVeiculo" required><br>
+        <label for="proprietario">Nome do Proprietário:</label>
+        <input type="text" id="proprietario" required><br>
+        <label for="modelo">Modelo do Veículo:</label>
+        <input type="text" id="modelo" required><br>
+        <label for="cor">Cor do Veículo:</label>
+        <input type="text" id="cor" required><br>
+        <button type="button" id="cadastrarVeiculo">Cadastrar Veículo</button>
+    </form>
+
+    <h2>Veículos Cadastrados</h2>
+    <table id="tabelaVeiculos">
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Proprietário</th>
+                <th>Modelo</th>
+                <th>Cor</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="veiculo.js"></script>
+    <p></p>
+    <a href="vaga.html">Vagas</a>
+    <p></p>
+    <a href="consulta.html">Consultar</a>
+</body>
+</html>

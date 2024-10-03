@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Vagas</title>
+    <style>
+        /* Estilos simplificados */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form, table {
+            width: 80%;
+            margin: 0 auto;
+        }
+        button {
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Vagas</h1>
+
+    <form id="vagaForm">
+        <label for="placa">Placa do Veículo:</label>
+        <input type="text" id="placa" required><br>
+        <label for="apartamento">Número do Apartamento:</label>
+        <input type="text" id="apartamento" required><br>
+        <label for="bloco">Bloco do Apartamento:</label>
+        <input type="text" id="bloco" required><br>
+        <label for="vaga">Número da Vaga:</label>
+        <input type="text" id="vaga" required><br>
+        <button type="button" id="cadastrarVaga">Cadastrar Vaga</button>
+    </form>
+
+    <h2>Vagas Cadastradas</h2>
+    <table id="tabelaVagas">
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Apartamento</th>
+                <th>Bloco</th>
+                <th>Vaga</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="vaga.js"></script>
+    <p></p>
+    <a href="cadastro.html">Cadastrar</a>
+    <p></p>
+    <a href="consulta.html">Consultar</a>
+</body>
+</html>
+
+
+
